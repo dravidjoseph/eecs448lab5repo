@@ -1,12 +1,7 @@
 <?php
 
-echo "run!\n";
-
 $username = $_POST["user"];
 $content = $_POST["content"];
-
-echo $username."\n";
-echo $content."\n";
 
 if($content == ""){
 	echo "Content cannot be left blank!";
@@ -21,21 +16,14 @@ if($mysqli->connect_errno){
 	printf("Connection Failed: %s\n",$mysqli->connect_error);
 	exit();
 }
-echo "We're working!";
 
 $exist = $mysqli->query("SELECT user_id FROM Users WHERE user_id = '$username'");
-
-echo "We're still working!";
-echo $exist->num_rows;
 
 if($exist->num_rows != 1){
 	echo "Only existing users may post!";
 	$mysqli->close();
 	exit();
 }
-
-echo "Still here!";
-
 
 //user exists, so add posts to database
 
@@ -45,7 +33,7 @@ if($result = $mysqli->query($postContent)){
 	echo "Your post was succesfully added.\n";
 }
 else{
-	echo "ERROR: YOur post was not added.\n";
+	echo "ERROR: Your post was not added.\n";
 }
 	
 	
