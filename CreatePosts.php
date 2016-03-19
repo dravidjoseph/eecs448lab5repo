@@ -27,7 +27,7 @@ $exist = $mysqli->query("SELECT user_id FROM Users WHERE user_id = '$username'")
 
 echo "We're still working!";
 echo $exist->num_rows;
-
+/*
 if($exist->num_rows == 0){
 	echo "Only existing users may post!";
 	mysqli->close();
@@ -35,7 +35,7 @@ if($exist->num_rows == 0){
 }
 
 echo "Still here!";
-/*
+
 //user exists, so add posts to database
 
 $postContent = "INSERT INTO Posts (author_id,content) VALUES ('$username','$content')";
