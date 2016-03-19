@@ -1,7 +1,7 @@
 <?php
 
 echo "run!";
-
+/**
 $username = $_POST["user"];
 $content = $_POST["content"];
 
@@ -40,6 +40,6 @@ else{
 	
 	
 mysqli->close();
-	
+	*/
 	
 ?>
