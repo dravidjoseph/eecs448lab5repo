@@ -14,7 +14,7 @@ if($mysqli->connect_errno){
 //Since connection has been established, take username
 $username = $_POST[user];
 
-$insert = "INSERT INTO Users (user) VALUES ('$username');";
+$insert = "INSERT INTO Users (user) VALUES ('$username')";
 
 if($result = $mysqli->query($insert)){
 	echo "$username was succesfully added.\n";
