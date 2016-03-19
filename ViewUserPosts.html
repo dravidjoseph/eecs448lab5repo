@@ -23,7 +23,7 @@
 	
 		while($row = mysqli_fetch_array($queryUser)){
 			$username = $row['user_id'];
-			echo '<option value = "'.$username.'">.$username.'</option>';
+			echo '<option value = "'.$username.'">'.$username.'</option>';
 		}
 		echo "</select>";
 		?>
