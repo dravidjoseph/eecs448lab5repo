@@ -16,8 +16,8 @@ echo '<th>Post From '.$username.'</th>';
 
 while($row = mysqli_fetch_array($userPosts)){
 	$post = $row['content'];
-	echo '<tr><td>'.$post'</td></tr>'
+	echo '<tr><td>'.$post.'</td></tr>';
 }
 
-echo '</table>'		
+echo '</table>';	
 ?>
