@@ -13,7 +13,7 @@ if($content == ""){
 	exit();
 }
 
-/*
+
 //At this point, we need to query the database
 $mysqli = new mysqli("mysql.eecs.ku.edu","djoseph","f2TUteC4dQRqL7jR","djoseph");
 
@@ -21,7 +21,7 @@ if($mysqli->connect_errno){
 	printf("Connection Failed: %s\n",$mysqli->connect_error);
 	exit();
 }
-
+/*
 $exist = $mysqli->query("SELECT user_id FROM Users WHERE user_id = '$username'");
 
 if(exist->num_rows == 0){
