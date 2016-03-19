@@ -21,7 +21,7 @@ if($result = $mysqli->query($insert)){
 	echo "$username was succesfully added.\n";
 }
 else{
-	echo "ERROR: $username does not fill preconditions.\n";
+	echo "ERROR: $username does not fill preconditions.\n".mysqli_error($mysqli);
 }
 
 
