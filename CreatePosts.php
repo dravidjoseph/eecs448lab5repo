@@ -3,7 +3,8 @@
 
 $username = $_POST["user"];
 $content = $_POST["content"];
-
+echo $username;
+echo $content;
 if($content == ""){
 	echo "Content cannot be left blank!";
 	exit();
@@ -29,7 +30,7 @@ if(exist->num_rows == 0){
 
 $postContent = "INSERT INTO Posts (author_id,content) VALUES ('$username','$content')";
 
-if($result = $mysqli->query($insert)){
+if($result = $mysqli->query($postContent)){
 	echo "Your post was succesfully added.\n";
 }
 else{
