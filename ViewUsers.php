@@ -9,7 +9,7 @@ if($mysqli->connect_errno){
 
 $user = $mysqli->query("SELECT user_id FROM Users");
 
-echo '<table>';
+echo '<table border = "1" style = "width = 100%">';
 echo '<th>Users</th>';
 
 
