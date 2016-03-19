@@ -30,14 +30,13 @@ echo $exist->num_rows;
 
 if($exist->num_rows != 1){
 	echo "Only existing users may post!";
-}
-	/*
-	mysqli->close();
+	$mysqli->close();
 	exit();
 }
 
 echo "Still here!";
 
+/*
 //user exists, so add posts to database
 
 $postContent = "INSERT INTO Posts (author_id,content) VALUES ('$username','$content')";
