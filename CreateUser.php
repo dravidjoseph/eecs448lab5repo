@@ -2,7 +2,7 @@
 
 //connect to the database
 
-$mysqli = new mysqli("mysql.eecs.ku.edu",djoseph,f2TUteC4dQRqL7jR,djoseph);
+$mysqli = new mysqli("mysql.eecs.ku.edu","djoseph","f2TUteC4dQRqL7jR","djoseph");
 
 //Check connection
 if($mysqli->connect_errno){
