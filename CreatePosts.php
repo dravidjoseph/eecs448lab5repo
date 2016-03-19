@@ -33,7 +33,7 @@ if($exist->num_rows != 1){
 	mysqli->close();
 	exit();
 }
-
+/*
 echo "Still here!";
 
 //user exists, so add posts to database
