@@ -25,7 +25,7 @@ echo "We're working!";
 
 $exist = $mysqli->query("SELECT user_id FROM Users WHERE user_id = '$username'");
 
-if(exist->num_rows == 0){
+if($exist->num_rows == 0){
 	echo "Only existing users may post!";
 	mysqli->close();
 	exit();
