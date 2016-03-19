@@ -17,12 +17,12 @@
 			echo '<th>Post ID</th><th>Username</th><th>Post</th><th>Delete?</th>';
 			
 			while($row = mysqli_fetch_array($selectPosts)){
-				$postID = $row['post_id];
+				$postID = $row['post_id'];
 				$author = $row['author_id'];
 				$content = $row['content'];
 				
 				
-				echo '<tr><td>'.$postID.'</td><td>'.$author.'</td><td>''.$content.'</td>';
+				echo '<tr><td>'.$postID.'</td><td>'.$author.'</td><td>'.$content.'</td>';
 				echo '<td><input type = "checkbox" name="isChecked[]"></td></tr>';
 			}
 			
