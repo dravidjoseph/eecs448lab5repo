@@ -16,7 +16,7 @@ echo '<th>Users</th>';
 while($row = mysqli_fetch_array($user)){
 	
 	$user = $row['user_id'];
-	echo '<tr><td>.$username.</td><tr>';
+	echo '<tr><td>'.$username.'</td><tr>';
 	
 }
 echo '</table>';
