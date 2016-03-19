@@ -13,7 +13,6 @@ if($mysqli->connect_errno){
 
 //Since connection has been established, take username
 $username = $_POST[user];
-echo $username;
 
 $insert = "INSERT INTO Users (user_id) VALUES ('$username')";
 
@@ -21,7 +20,7 @@ if($result = $mysqli->query($insert)){
 	echo "$username was succesfully added.\n";
 }
 else{
-	echo "ERROR: $username does not fill preconditions.\n".mysqli_error($mysqli);
+	echo "ERROR: $username does not fill preconditions.\n";
 }
 
 
