@@ -1,10 +1,14 @@
 <?php
 
-echo "run!";
-/**
+echo "run!\n";
+
 $username = $_POST["user"];
 $content = $_POST["content"];
 
+echo $username."\n";
+echo $content."\n";
+
+/*
 if($content == ""){
 	echo "Content cannot be left blank!";
 	exit();
