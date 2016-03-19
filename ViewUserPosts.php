@@ -12,7 +12,7 @@ if($mysqli->connect_errno){
 $userPosts = $mysqli->query("SELECT content FROM Posts WHERE author_id = '$username'");
 
 echo '<table border = "1" style = "width = 100%">';
-echo '<th>Post From '.$username'</th>';
+echo '<th>Post From '.$username.'</th>';
 
 while($row = mysqli_fetch_array($userPosts)){
 	$post = $row['content'];
