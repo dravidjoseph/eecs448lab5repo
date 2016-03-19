@@ -17,7 +17,5 @@ $deletePosts = $mysqli->query("DELETE FROM Posts WHERE post_id in ('$checking')"
 if($deletePosts){
 	echo "Successfully deleted post(s)";
 }	
-$mysqli->close();
-	
-	
+$mysqli->close();	
 ?>
