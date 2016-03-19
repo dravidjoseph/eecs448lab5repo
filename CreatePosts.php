@@ -27,13 +27,13 @@ $exist = $mysqli->query("SELECT user_id FROM Users WHERE user_id = '$username'")
 
 echo "We're still working!";
 echo $exist->num_rows;
-
+/*
 if($exist->num_rows != 1){
 	echo "Only existing users may post!";
 	mysqli->close();
 	exit();
 }
-/*
+
 echo "Still here!";
 
 //user exists, so add posts to database
