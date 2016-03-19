@@ -13,7 +13,7 @@ if($content == ""){
 	exit();
 }
 
-
+/*
 //At this point, we need to query the database
 $mysqli = new mysqli("mysql.eecs.ku.edu","djoseph","f2TUteC4dQRqL7jR","djoseph");
 
