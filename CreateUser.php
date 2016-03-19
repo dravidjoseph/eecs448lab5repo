@@ -2,12 +2,12 @@
 
 //connect to the database
 
-$mysqli = new mysqli("https://mysql.eecs.ku.edu",djoseph,f2TUteC4dQRqL7jR,djoseph);
+$mysqli = new mysqli("mysql.eecs.ku.edu",djoseph,f2TUteC4dQRqL7jR,djoseph);
 
 //Check connection
 if($mysqli->connect_errno){
 	
-	printf("Connect failed: $s\n",$mysql->connect_error);
+	printf("Connection failed: $s\n",$mysql->connect_error);
 	exit();
 }
 
