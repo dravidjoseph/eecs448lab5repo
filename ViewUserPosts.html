@@ -1,6 +1,7 @@
 <html>
 
 <head>
+View User Posts
 </head>
 
 
@@ -8,19 +9,21 @@
 	
 	<form action = "ViewUserPosts.php" method="post">
 		<?php
-	
+		//Establish connection
 		$mysqli = new mysqli("mysql.eecs.ku.edu","djoseph","f2TUteC4dQRqL7jR","djoseph");
 	
-	
+		//check connection
 		if($mysqli->connect_errno){
 			printf("Connection Failed: %s\n",$mysqli->connect_error);
 			exit();
 		}
-	
+		//get all users
 		$queryUser = $mysqli->query("SELECT user_id FROM Users");
-	
+		
+		//dropdown menu structure
 		echo "<select name = 'user'>";
 	
+		//put each value in dropdown
 		while($row = mysqli_fetch_array($queryUser)){
 			$username = $row['user_id'];
 			echo '<option value = "'.$username.'">'.$username.'</option>';
